@@ -32,7 +32,104 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
+  }
+}
+
+.icon-group-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.icon-group {
+  cursor: pointer;
+  background-color: #eee;
+  color: #000000;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+
+.icon-group i {
+  margin-right: 5px;
+}
+
+.icon-group:hover {
+  background-color: #61dafb;
+  color: #fff;
+}
+
+.icon-group-wrap .icon-btn {
+  padding: 0 10px;
+}
+
+.custom-modal {
+  padding: 30px;
+}
+
+.form-control input {
+  border: 0;
+  width: 100%;
+}
+
+.custom-modal .form-control i {
+  cursor: pointer;
+}
+
+.form-control input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.search_icon {
+  position: absolute;
+  left: 10px;
+  top: 6px;
+  pointer-events: none;
+}
+
+.search_wrap input {
+  padding-left: 35px;
+}
+
+.search_wrap {
+  position: relative;
+  max-width: 400px;
+  margin: 10px auto;
+}
+
+.filter-list div {
+  padding: 10px;
+}
+
+.filter-list i {
+  margin-right: 10px;
+}
+
+.react-responsive-modal-modal {
+  width: 100%;
+}
+
+@media screen and (max-width: 640px) {
+  .icon-group-wrap .icon-btn {
+    width: 50%;
+  }
+
+  .icon-group-wrap .icon-btn {
+    padding: 5px;
+  }
+
+  .custom-modal {
+    padding: 30px 0;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .icon-group-wrap .icon-btn {
+    width: 100%;
   }
 }
