@@ -45,8 +45,8 @@ function App() {
       let finalFilter = []
       for (let index = 0; index < Object.keys(searchData).length; index++) {
         initialfilter.push(
-          Object.values(searchData)[index].
-            filter(({ name }) => name.toLowerCase().match(value.toLowerCase())))
+          Object.values(searchData)[index]
+            .filter(({ name }) => name.toLowerCase().match(value.toLowerCase())))
         initialfilter[index].map(name => finalFilter.push(name))
       }
       setFitler(finalFilter)
